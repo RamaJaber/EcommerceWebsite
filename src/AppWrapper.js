@@ -5,6 +5,7 @@ import { Login } from './pages/Login';
 import { Error } from './pages/Error';
 import { NotFound } from './pages/NotFound';
 import { Access } from './pages/Access';
+import { Signup } from './pages/Signup';
 
 const AppWrapper = (props) => {
 	let location = useLocation();
@@ -16,6 +17,8 @@ const AppWrapper = (props) => {
 	switch (props.location.pathname) {
 		case '/login':
 			return <Route path="/login" component={Login} />
+			case '/Signup':
+			return <Route path="/Signup" component={Signup} />
 		case '/error':
 			return <Route path="/error" component={Error} />
 		case '/notfound':

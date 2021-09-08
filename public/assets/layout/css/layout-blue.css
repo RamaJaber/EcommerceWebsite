@@ -3045,9 +3045,16 @@ a {
   margin: 0 auto;
   position: relative;
   height: 100vh;
-  background: url("../../layout/images/pages/login-bg.jpg") no-repeat;
+  background: url("../../layout/images/pages/1618237687306.jpg") no-repeat;
   background-size: cover;
 }
+.login-body2 {
+  background: url("../../layout/images/pages/ecommerce.png") no-repeat;
+  background-size: cover;
+
+}
+
+
 .login-body .login-panel {
   padding: 0 70px 20px 70px;
   height: 100%;
@@ -3062,6 +3069,10 @@ a {
 .login-body .login-panel .login-panel-content {
   margin-top: 33.3%;
 }
+.login-panel-content2 {
+  margin-top: 10%;
+}
+
 .login-body .login-panel .logo-container {
   text-align: left;
 }
@@ -3070,7 +3081,7 @@ a {
   margin-bottom: 25px;
 }
 .login-body .login-panel .username-container, .login-body .login-panel .password-container {
-  text-align: left;
+  text-align: right;
 }
 .login-body .login-panel h1 {
   display: inline-block;

@@ -29,6 +29,7 @@ import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import './App.scss';
 import { Login } from './pages/Login';
+import { Signup } from './pages/Signup';
 
 const App = () => {
 
@@ -74,6 +75,7 @@ const App = () => {
             label: 'Pages', icon: 'pi pi-fw pi-copy',
             items: [
                 { label: 'Login', icon: 'pi pi-fw pi-sign-in', to: '/login' },
+                { label: 'Signup', icon: 'pi pi-fw pi-sign-in', to: '/Signup' },
                 { label: 'Error', icon: 'pi pi-fw pi-exclamation-triangle', to: '/error' },
                 { label: '404', icon: 'pi pi-fw pi-times', to: '/notfound' },
                 { label: 'Access Denied', icon: 'pi pi-fw pi-ban', to: '/access' },
@@ -336,6 +338,7 @@ const App = () => {
     const inlineUserTimeout = layoutMode === 'slim' ? 0 : { enter: 1000, exit: 450 };
 
     return (
+       
         <div className={layoutClassName} onClick={onDocumentClick}>
             <AppTopbar topbarMenuActive={topbarMenuActive} activeTopbarItem={activeTopbarItem} inlineUser={inlineUser}
                 onRightMenuButtonClick={onRightMenuButtonClick} onMenuButtonClick={onMenuButtonClick}
